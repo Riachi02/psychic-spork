@@ -1,0 +1,86 @@
+.logo
+{
+    max-width: 5%;
+}
+
+body 
+{
+    background: url('../img/SPA\ BACKGROUND\ big.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.form-title
+{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #724190;
+}
+
+.navbar-style
+{
+    background-image: linear-gradient(#724190, #d662c342);
+    font-size: 25px;
+    color: white;
+}
+
+.dropdown-group
+{
+    width: inherit;
+    transition: all 0.4s ease-in-out;
+    display: none;
+}
+
+.dropdown-link:hover>.dropdown-group
+{
+    display: block;
+}
+
+
+
+.dropdown-menu
+{
+    --bs-dropdown-bg: #fff0;
+}
+
+.dropdown-element
+{
+    transition: all 0.4s ease-in-out;
+    font-size: 20px;
+    margin: 5px 0px 5px 0px;
+    border-color: #d662c37f;
+    border-style: ridge;
+    backdrop-filter: blur(8px);
+}
+
+.container-form
+{
+    margin-top: 100px;
+    min-width: 400px;
+    border-radius: 15%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(8px);
+}
+
+.submit-btn
+{
+    height: 50px;
+    border: none;
+    border-radius: 15%;
+    color: white;
+    font-size: 20px;
+    background-image: linear-gradient(92.88deg,  #d662c2, #9050b9, #d662c2);
+    transition: all 0.4s;
+}
+
+  .submit-btn:hover
+{
+    width: 35%;
+    background-image: linear-gradient(92.88deg,  #9050b9, #d662c2, #9050b9);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.594);;
+}
+

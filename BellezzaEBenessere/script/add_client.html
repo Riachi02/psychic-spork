@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_vuoto.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+    <title>Bellezza e Benessere</title>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-style sticky-top">
+      <div class="container-fluid">
+          <img src="../Loghi/logoBN bollino inverso.png" alt="logo" class="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+              <ul class="navbar-nav col-10 justify-content-evenly">
+                  <li class="nav-item dropdown-center">
+                      <a class="nav-link  dropdown-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gestisci Appuntamenti</a>
+                      <ul class="dropdown-menu dropdown-group">
+                          <li class="dropdown-element"><a class="dropdown-item" href="#">Aggiungi Appuntamento</a></li>
+                          <li class="dropdown-element"><a class="dropdown-item" href="#">Rimuovi Appuntamento</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown-center">
+                      <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gestisci Clienti</a>
+                      <ul class="dropdown-menu dropdown-group">
+                          <li class="dropdown-element"><a class="dropdown-item " href="#">Aggiungi Cliente</a></li>
+                          <li class="dropdown-element"><a class="dropdown-item" href="#">Modifica Cliente</a></li>
+                          <li class="dropdown-element"><a class="dropdown-item" href="#">Visualizza Cliente</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown-center">
+                      <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Visualizza Agenda</a>
+                      <ul class="dropdown-menu dropdown-group">
+                          <li class="dropdown-element"><a class="dropdown-item" href="#">Agenda della settimana</a></li>
+                          <li class="dropdown-element"><a class="dropdown-item" href="#">Agenda totale</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+  <div class="container-fluid w-50 p-5 container-form">
+    <h1 class="form-title">INSERISCI I DATI</h1>
+      <form class="row justify-content-center align-items-center needs-validation" novalidate>
+        <div class="col-auto col-lg-6 px-2">
+         <div class="form-floating mb-3">
+            <input type="text" id="nome" name="nome" placeholder="Nome" class="form-control" required>
+            <label for="nome">Nome</label>
+            <div class="valid-feedback">
+                Campo valido!
+            </div>
+            <div class="invalid-feedback">
+                Inserire il nome.
+            </div>
+         </div>
+         <div class="form-floating mb-3">
+            <input type="text" id="n-telefono" name="n-telefono" placeholder="Numero di telefono" class="form-control" required>
+            <label for="n-telefono">Numero di telefono</label>
+            <div class="valid-feedback">
+                Campo valido!
+            </div>
+            <div class="invalid-feedback">
+                Inserire un n. di telefono valido.
+            </div>
+         </div>
+        </div>
+        <div class="col-auto col-lg-6 px-2">
+         <div class="form-floating mb-3">
+            <input type="text" id="cognome" name="cognome" placeholder="Cognome" class="form-control" required>
+            <label for="cognome">Cognome</label>
+            <div class="valid-feedback">
+                Campo valido!
+            </div>
+            <div class="invalid-feedback">
+                Inserire il cognome.
+            </div>
+         </div>
+         <div class="form-floating mb-3">
+            <input type="date" id="data-nascita" name="data-nascita" placeholder="Data di nascita" class="form-control" required>
+            <label for="data-nascita">Data di nascita</label>
+            <div class="valid-feedback">
+                Campo valido!
+            </div>
+            <div class="invalid-feedback">
+                Inserire una data di nascita valida.
+            </div>
+         </div>
+        </div>
+        <div class="px-sm-5 px-lg-2">
+            <div class="form-floating mb-3 w-100 px-0">
+                <input type="text" id="email" name="email" placeholder="E-mail" class="form-control" required>
+                <label for="email">E-mail</label>
+                <div class="valid-feedback">
+                    Campo valido!
+                </div>
+                <div class="invalid-feedback">
+                    Inserire un e-mail valida.
+                </div>
+            </div>
+        </div>
+        <div class="px-sm-5 px-lg-2">
+            <div class="form-floating mb-3 w-100 px-0">
+                <textarea type="text" id="note" name="note" placeholder="Note aggiuntive" class="form-control" rows="3"></textarea>
+                <label for="note">Note aggiuntive</label>
+            </div>
+        </div>
+        <button type="submit" class="col-5 submit-btn" id="submit">INVIO</button>
+    </form>
+  </div>
+</div>
+<div id="response">
+
+</div>
+    <script src="../js/script.js"></script>
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

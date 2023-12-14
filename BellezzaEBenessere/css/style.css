@@ -1,0 +1,231 @@
+body, html {
+    height: 100%;
+  }
+  
+* {
+    box-sizing: border-box;
+}
+
+.background
+{
+    background-image: url('../img/SPA BACKGROUND big.jpg');
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title
+{
+    position: static;
+    color: black;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.logo
+{
+    max-width: 28%;
+}
+
+.logo-ridotto
+{
+    float: left;
+    max-width: 100%;
+    width: 100px;
+}
+
+.home-icon
+{
+  display: block;
+  margin-left: 3%;
+  max-width: 100%;
+  width: 30px;
+}
+
+.uno-img-container
+{
+  width: 1%;
+}
+
+.due-img-container
+{
+  width: 2%;
+}
+
+.options
+{
+    position: absolute;
+    width: 80%;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* CSS */
+.button-36 {
+  background-image: linear-gradient(92.88deg,  #d662c2, #9050b9, #d662c2);
+  width: 90%;
+  min-width: 160px;
+  border-radius: 8%;
+  border: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
+  height: 7rem;
+  /*padding: 0 1.6rem;*/
+  margin-top: 2%;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.dropdown:hover .button-36
+{
+    border-radius: 8% 8% 0% 0%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.594);;
+}
+
+.dropdown:hover .dropdown-content
+{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.594);
+    transition-duration: 0.5s;
+}
+
+.dropdown 
+{
+    transition-duration: 0.5s;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content 
+{
+    transition-duration: 0.5s;
+    display: none;
+    position: absolute;
+    width: 90%;
+    min-width: 160px;
+    text-align: center;
+    z-index: 1;
+}
+
+.dropdown-content a 
+{
+    /*background-image: linear-gradient(#c15ab0, #5b3175);*/
+    background-color: #7f44a3;
+    font-size: 1.7vw;
+    color: white;
+    padding: 12px 16px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    transition-duration: 0.5s;
+}
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-image: linear-gradient(92.88deg,  #d662c2, #9050b9, #d662c2);
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+.dropdown-content-navbar
+{
+  transition-duration: 0.5s;
+  display: none;
+  width: inherit;
+  text-align: center;
+  z-index: 1;
+}
+
+.dropdown-content-navbar a
+{
+  text-decoration: none;
+  font-size: 1.7vw;
+  color: white;
+  display: block;
+  transition-duration: 0.5s;
+}
+
+li:hover .dropdown-content-navbar
+{
+  display: block;
+}
+  
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+
+/*----------------------NAVBAR-------------------------*/
+
+.navbar
+{
+  position: fixed;
+  top: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  height: 20%;
+  width: 110%;
+}
+
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 110%;
+}
+
+li 
+{
+  margin-top: 0;
+  float: left;
+  background-image: linear-gradient(#724190, #d662c37b);
+  padding-left: 0;
+}
+
+li img
+{
+  padding-left: 0;
+}
+
+li a
+{
+  display: block;
+  color: white;
+  font-size: 1.8vw;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+.dropdown-content-navbar a:last-child
+{
+  border-bottom: solid;
+  border-width: 10px;
+  border-image: linear-gradient(#d662c346, rgba(255, 255, 255, 0));;
+}
